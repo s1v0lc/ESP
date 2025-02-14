@@ -34,7 +34,7 @@ nav {
     height: 10vh;
     width: 100%;
     background-color: #363940;
-    position: absolute;
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,8 +53,31 @@ nav {
     
     div.navD {
         display: flex;
-        width: 40%;
-        justify-content: space-around;
+        width: 45%;
+        justify-content: flex-end;
+        @media screen and (min-width: 767px) {
+            justify-content: space-around;
+        }
+
+        button {
+            background-color: unset;
+            border: none;
+            cursor: pointer;
+            color: var(--couleur-font-2);
+            .material-symbols-outlined  {
+                font-size: 2rem;
+            }
+            @media screen and (min-width: 767px) {
+                display: none;
+            }
+        }
+
+        a {
+            display: none;
+            @media screen and (min-width: 767px) {
+                display: unset;
+            }
+        }
 
     }
 }
@@ -67,35 +90,39 @@ main {
     height: 100vh;
  }
  section.accueil {
-    /* height: 90vh; */
+    height: 90vh;
+    padding: 0px 5%;
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    column-gap: 5%;
     flex-direction: column;
-    /* background: url(../images/courants-d_espace-43-1024x683.png) no-repeat center center; */
-    background:
-    /* top, transparent black, faked with gradient */ 
-    linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-        ),
-        /* bottom, image */
-        url(../images/courants-d_espace-43-1024x683.png) no-repeat;
-    background-size: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/courants-d_espace-43-1024x683.png) no-repeat;
+    @media screen and (min-width: 992px) {
+        background-size: 100%;
+        flex-direction: unset;
+    }
     color: var(--couleur-font-2);
- }
 
- /* filtre noir sur l'arrière plan */
- section.accueil::before {
-     content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: -1;
+    /* Div à droite du titre */
+    .divImg {
+        width: 80%;
+        @media screen and (min-width: 767px) {
+            width: 30%;
+        }
+        /* height: 100%; */
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /* sous-titre */
+    h2 {
+        font-variant-caps: all-small-caps;
+    }
  }
 }
 
