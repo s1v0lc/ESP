@@ -1,6 +1,101 @@
 /* Feuille de Style App Multi ESP */
 /* Auteur: Clovis Gauthier */
 /* Session hiver 2025 */
-html {
-    background-color: red;
+
+/* Variables CSS */
+:root {
+    /* Texte */
+    --font-1: 'Montserrat', sans-serif;
+    /* Couleur */
+    --couleur-font-1: #000000;
+    --couleur-font-2: #a9a9a9;
 }
+
+/* Règles générales */
+html {
+    /* background-color: red; */
+}
+
+* {
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+}
+body {
+    font-family: var(--font-1);
+    position: relative;
+}
+
+/* Menu navigation */
+nav {
+    font-weight: bold;
+    letter-spacing: 0.75px;
+    height: 10vh;
+    width: 100%;
+    background-color: #363940;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+    
+    a {
+        text-decoration: none;
+        color: var(--couleur-font-2);
+    }
+    
+    div.navG {
+        width: 40%;
+        color: var(--couleur-font-2);
+    }
+    
+    div.navD {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+
+    }
+}
+
+/* Contenu principal */
+main {
+ section {
+    border: black 1px solid;
+    background-color: lightblue;
+    height: 100vh;
+ }
+ section.accueil {
+    /* height: 90vh; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background: url(../images/courants-d_espace-43-1024x683.png) no-repeat center center; */
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url(../images/courants-d_espace-43-1024x683.png) no-repeat;
+    background-size: 100%;
+    color: var(--couleur-font-2);
+ }
+
+ /* filtre noir sur l'arrière plan */
+ section.accueil::before {
+     content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+ }
+}
+
