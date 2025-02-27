@@ -9,11 +9,13 @@
     /* Couleur */
     --couleur-font-1: #000000;
     --couleur-font-2: #a9a9a9;
+    --couleur-fond: #363940;
 }
 
 /* Règles générales */
 html {
     /* background-color: red; */
+    background-color: var(--couleur-fond);
 }
 
 * {
@@ -22,6 +24,7 @@ html {
         padding: 0;
     }
 }
+
 body {
     font-family: var(--font-1);
     position: relative;
@@ -33,28 +36,35 @@ nav {
     letter-spacing: 0.75px;
     height: 10vh;
     width: 100%;
-    background-color: #363940;
+    background-color: var(--couleur-fond);
     position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     z-index: 100;
-    
+
     a {
         text-decoration: none;
         color: var(--couleur-font-2);
     }
-    
+
     div.navG {
         width: 40%;
         color: var(--couleur-font-2);
+
+        a {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: flex-end;
+        }
     }
-    
+
     div.navD {
         display: flex;
         width: 45%;
         justify-content: flex-end;
+
         @media screen and (min-width: 767px) {
             justify-content: space-around;
         }
@@ -64,9 +74,11 @@ nav {
             border: none;
             cursor: pointer;
             color: var(--couleur-font-2);
-            .material-symbols-outlined  {
+
+            .material-symbols-outlined {
                 font-size: 2rem;
             }
+
             @media screen and (min-width: 767px) {
                 display: none;
             }
@@ -74,6 +86,7 @@ nav {
 
         a {
             display: none;
+
             @media screen and (min-width: 767px) {
                 display: unset;
             }
@@ -84,45 +97,49 @@ nav {
 
 /* Contenu principal */
 main {
- section {
-    border: black 1px solid;
-    background-color: lightblue;
-    height: 100vh;
- }
- section.accueil {
-    height: 90vh;
-    padding: 0px 5%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    column-gap: 5%;
-    flex-direction: column;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/courants-d_espace-43-1024x683.png) no-repeat;
-    @media screen and (min-width: 992px) {
-        background-size: 100%;
-        flex-direction: unset;
+    section {
+        border: black 1px solid;
+        background-color: lightblue;
+        height: 100vh;
     }
-    color: var(--couleur-font-2);
 
-    /* Div à droite du titre */
-    .divImg {
-        width: 80%;
-        @media screen and (min-width: 767px) {
-            width: 30%;
+    section.accueil {
+        height: 90vh;
+        padding: 0px 5%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5%;
+        flex-direction: column;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/courants-d_espace-43-1024x683.png) no-repeat;
+
+        @media screen and (min-width: 992px) {
+            background-size: 100%;
+            flex-direction: unset;
         }
-        /* height: 100%; */
 
-        img {
-            width: 100%;
-            height: auto;
+        color: var(--couleur-font-2);
+
+        /* Div à droite du titre */
+        .divImg {
+            width: 80%;
+
+            @media screen and (min-width: 767px) {
+                width: 30%;
+            }
+
+            /* height: 100%; */
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* sous-titre */
+        h2 {
+            font-variant-caps: all-small-caps;
         }
     }
-
-    /* sous-titre */
-    h2 {
-        font-variant-caps: all-small-caps;
-    }
- }
 }
-
