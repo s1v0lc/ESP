@@ -27,10 +27,10 @@
             <button>
                 <span class="material-symbols-outlined">menu</span>
             </button>
-            <a href="#">Projet</a>
-            <a href="#">Avancements</a>
-            <a href="#">Auteur</a>
-            <a href="#">Résultat</a>
+            <a href="#projet">Projet</a>
+            <a href="#avancement">Processus</a>
+            <a href="#auteur">Auteur</a>
+            <a href="#resultat">Résultat</a>
         </div>
     </nav>
     <!-- Contenu principal -->
@@ -44,10 +44,10 @@
             <div class="divImg"><img src="images/courants-d_espace-43-1024x683.png" alt=""></div>
         </section>
         <!-- Description du projet -->
-        <section class="projet">
+        <section class="projet" id="projet">
             <div class="projet__titre">
                 <h2>PROJET FIN D'ÉTUDES</h2>
-                <h3>Description</h3>
+                <h3>description</h3>
             </div>
             <div class="projet__conteneur">
                 <div class="projet__contenu">
@@ -78,7 +78,8 @@
                 <div class="projet__contenu">
                     <h3>ÉMOTION</h3>
                     <p>
-                        Le but est de multiplier l'émotion transportée par la musique afin que l'utilisateur soit complètement immergé dans l'expérience unique.
+                        Le but est de multiplier l'émotion transportée par la musique afin que l'utilisateur soit
+                        complètement immergé dans l'expérience unique.
                     </p>
                 </div>
             </div>
@@ -87,39 +88,93 @@
         <!-- Ruban outils utilisés -->
         <section class="outils">
             <div class="outils__conteneur">
-                <img class="imgRuban" src="images/unity.png" alt="">
-                <img class="imgRuban" src="images/autodesk-maya-logo.png" alt="">
-                <img class="imgRuban" src="images/Meta_Quest_logo.svg.png" alt="">
-                <img class="imgRuban" src="images/ableton-live-logo-png.png" alt="">
-                <img class="imgRuban" src="images/sketchfab_logo.jpg" alt="">
-                <img class="imgRuban" src="images/substance.png" alt="">
+                <img class="imgRuban" src="images/logo/unity.png" alt="">
+                <img class="imgRuban" src="images/logo/autodesk-maya-logo.png" alt="">
+                <img class="imgRuban" src="images/logo/Meta_Quest_logo.svg.png" alt="">
+                <img class="imgRuban" src="images/logo/ableton-live-logo-png.png" alt="">
+                <img class="imgRuban" src="images/logo/sketchfab_logo.jpg" alt="">
+                <img class="imgRuban" src="images/logo/substance.png" alt="">
             </div>
         </section>
         <!-- Processsus de création -->
-        <section class="avancement">
+        <section class="avancement" id="avancement">
             <div class="avancement__titre">
-                <h2>PROCESSUS CRÉATIF</h2>
-                <h3>Avancements</h3>
+                <h2>PROCESSUS</h2>
+                <h3>étapes de réalisation</h3>
             </div>
             <div class="avancement__conteneur">
+                <!-- Recherche -->
                 <div class="avancement__contenu">
-                    <h3>IMMERSION</h3>
+                    <h3>RECHERCHE</h3>
                     <p>
-                        Expérience immersive en réalité virtuelle
-                        dans laquelle le joueur/utilisateur peut explorer
-                        un petit monde.
+                        À l'aide de mon projet de recherche réalisé la session dernière,
+                        ainsi qu'une multitude de tutoriels et de sites de
+                        documentation, j'ai récupéré l'information nécessaire
+                        à la réalisation du projet.
                     </p>
+                    <div class="avancement__img_petit">
+                        <img src="images/ss/ableton.png" alt="">
+                        <img src="images/ss/vr.png" alt="">
+                        <img src="images/ss/vr2.png" alt="">
+                        <img src="images/ss/beat.png" alt="">
+                    </div>
+                    <p>
+                        Les principales fonctionnalités recherchées dans les tutoriels étaient, d'abord, comment
+                        utiliser le logiciel Ableton Live pour composer des pistes audio. Ensuite, j'ai regardé
+                        plusieurs vidéos pour que mon projet de réalité virtuelle soit bien optimisé pour le Quest 3 et
+                        afin qu'il ait des interactions simples et intuitives avec les différents objets dans la scène.
+                    </p>
+                    <div class="avancement__img_grand">
+                        <img src="images/ableton/full.png" alt="">
+                        <img src="images/ableton/tracks.png" alt="">
+                    </div>
+                    <p>
+                        Les images ci-dessus représentent les deux principales vues du logiciel auquel j'ai rapidement
+                        du me familiariser, car j'étais doublement limité dans le temps. D'abord par la remise du projet
+                        imminent ainsi, que l'essai gratuit ne durant que 30 jours. Toutefois, ces deux vues sont
+                        elles-mêmes composées de plusieurs panneaux modulables.
+                    </p>
+                    <div class="avancement__img_grand">
+                        <img src="images/ableton/librairie.png" alt="">
+                        <img src="images/ableton/full2.png" alt="">
+                    </div>
+                    <p>
+                        Ici, par exemple, en cliquant sur la piste bleu clair on développe le panneau des MIDI (Musical
+                        Instrument Digital Interface), dans lequel on peut placer des notes. Ensuite, on peut choisir
+                        quel instrument virtuel (VST) va jouer ces notes. Finalement, on peut appliquer une variété
+                        d'effets pour obtenir le son souhaité. Dans l'image ci-dessous, j'ai utilisé l'effet Arpegiator
+                        pour découper mes accords.
+                    </p>
+                    <div class="avancement__img_moyen">
+                        <img src="images/ableton/midi.png" alt="">
+                        <img src="images/ableton/arp.png" alt="">
+                    </div>
+                    <p>
+                        Le travail ne s'arrête pas là! Avant de commencer, il faut d'abord paramétrer le projet selon
+                        nos besoin. Une fois satisfait de notre composition, il faut aussi choisir les options
+                        d'exportations adéquates. De plus, il existe aussi les fonctions d'automatisation, qui
+                        consistent en
+                        des courbes de bézier qui permettent de modifier le volume ou autres effets appliqués sur une
+                        piste dynamiquement.
+                    </p>
+                    <div class="avancement__img_moyen">
+                        <img src="images/ableton/export.png" alt="">
+                        <img src="images/ableton/settings.png" alt="">
+                        <img src="images/ableton/automation.png" alt="">
+                    </div>
                 </div>
+                <!-- Création -->
                 <div class="avancement__contenu">
-                    <h3>AUDIO</h3>
+                    <h3>CONCEPTION CRÉATIVE</h3>
                     <p>
                         Apprendre à utiliser une station de travail
                         audio-numérique (STAN) telle qu'Ableton pour
                         réaliser le son.
                     </p>
                 </div>
+                <!-- Prod -->
                 <div class="avancement__contenu">
-                    <h3>INTERACTION</h3>
+                    <h3>PRODUCTION</h3>
                     <p>
                         Le monde contient plusieurs stations
                         auxquelles on peut faire jouer des extraits
@@ -127,17 +182,58 @@
                         rythme de la piste musicale
                     </p>
                 </div>
+                <!-- Prog -->
                 <div class="avancement__contenu">
-                    <h3>ÉMOTION</h3>
+                    <h3>PROGRAMMATION</h3>
                     <p>
-                        Le but est de multiplier l'émotion transportée par la musique afin que l'utilisateur soit complètement immergé dans l'expérience unique.
+                        Afin de bien faire fonctionner l'expérience immersive, il a, bien entendu, fallu écrire quelques
+                        scripts.
+                    </p>
+                    <div class="avancement__img_petit">
+                        <!-- <img src="images/ss/ableton.png" alt="">
+                        <img src="images/ss/vr.png" alt="">
+                        <img src="images/ss/vr2.png" alt="">
+                        <img src="images/ss/beat.png" alt=""> -->
+                    </div>
+                </div>
+                <!-- Présentation -->
+                <div class="avancement__contenu">
+                    <h3>PRÉSENTATION</h3>
+                    <p>
+                        Afin de facilement présenter mon projet et d'éviter les imprévus lors du jour de la
+                        présentation, je vais utiliser cette page web hébergée sur GitHub Pages.
+                    </p>
+                    <p>
+                        Le site prend la forme d'une seule page défilable pour conserver une simplicité de navigation
+                        et l'attention de l'utilisateur à l'essentiel. De plus, le tout est adaptatif pour qu'il soit
+                        accessible à toutes les tailles d'écrans.
                     </p>
                 </div>
             </div>
             <p></p>
         </section>
-        <section></section>
+        <!-- Auteur -->
+        <section class="auteur" id="auteur">
+            <div class="auteur__titre">
+                <h2>Auteur</h2>
+                <h3>...</h3>
+            </div>
+        </section>
+        <!-- Résultat -->
+        <section class="resultat" id="resultat">
+            <div class="resultat__titre">
+                <h2>Résultat</h2>
+                <h3>& présentation</h3>
+            </div>
+        </section>
     </main>
+
+    <!-- Pied de page -->
+     <footer>
+        <h4>Crédits</h4>
+        <h4>TIM Hiver 2025</h4>
+        <h4>BLA BLA BLA</h4>
+     </footer>
     <script src="./js/script.js"></script>
 </body>
 

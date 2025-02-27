@@ -13,7 +13,7 @@
     --couleur-font-3: #363940;
     --couleur-fond-menu: #363940;
     --couleur-fond: #ffffff;
-    --couleur-fond2: #F8F8F8;
+    --couleur-fond2: #F1F1F1;
 }
 
 /* Règles générales */
@@ -21,6 +21,7 @@ html {
     /* background-color: red; */
     background-color: var(--couleur-fond-menu);
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -216,8 +217,10 @@ main {
             margin-top: 5%;
 
             .projet__contenu {
-                height: 40%;
+                height: 200px;
                 display: flex;
+                justify-content: flex-start;
+                /* align-items: center; */
                 flex-direction: column;
                 row-gap: 10px;
                 flex-basis: 40%;
@@ -227,4 +230,97 @@ main {
     }
 
     /* Avancements */
+    section.avancement {
+        .avancement__titre {
+            width: 100%;
+            margin-top: 8%;
+            text-align: center;
+
+            h3 {
+                /* margin-left: 2%; */
+                margin-top: 1%;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+
+        .avancement__conteneur {
+            flex-grow: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            row-gap: 10vh;
+            margin-top: 10vh;
+            overflow: hidden;
+
+
+            .avancement__contenu {
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+
+                .avancement__img_petit,
+                .avancement__img_moyen,
+                .avancement__img_grand {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: fit-content;
+                    width: 100%;
+                    justify-content: center;
+                    row-gap: 15px;
+                    column-gap: 5%;
+                    background-color: var(--couleur-fond2);
+                    padding: 2% 0;
+
+                    img {
+                        height: 120px;
+                    }
+                }
+
+                .avancement__img_moyen {
+                    img {
+                        height: 250px;
+
+                        @media screen and (max-width: 600px) {
+                            height: 100px;
+                        }
+                    }
+                }
+
+                .avancement__img_grand {
+                    column-gap: 2%;
+
+                    img {
+                        height: 325px;
+
+                        @media screen and (max-width: 600px) {
+                            height: 125px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Auteur */
+    section.auteur {
+        background-color: var(--couleur-fond2);
+    }
+
+    /* Résultat */
+    section.resultat {
+
+    }
+}
+
+footer {
+    background-color: var(--couleur-fond-menu);
+    height: 20vh;
+    display: flex;
+    color: var(--couleur-font-2);
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
 }
