@@ -6,20 +6,32 @@
 :root {
     /* Texte */
     --font-1: 'Montserrat', sans-serif;
+    --font-2: 'Roboto', 'Helvetica', sans-serif;
     /* Couleur */
     --couleur-font-1: #000000;
     --couleur-font-2: #a9a9a9;
-    --couleur-fond: #363940;
+    --couleur-font-3: #363940;
+    --couleur-fond-menu: #363940;
+    --couleur-fond: #ffffff;
+    --couleur-fond2: #F8F8F8;
 }
 
 /* Règles générales */
 html {
     /* background-color: red; */
-    background-color: var(--couleur-fond);
+    background-color: var(--couleur-fond-menu);
+    box-sizing: border-box;
 }
 
 * {
-    h1 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
         margin: 0;
         padding: 0;
     }
@@ -36,7 +48,7 @@ nav {
     letter-spacing: 0.75px;
     height: 10vh;
     width: 100%;
-    background-color: var(--couleur-fond);
+    background-color: var(--couleur-fond-menu);
     position: sticky;
     display: flex;
     justify-content: center;
@@ -98,28 +110,39 @@ nav {
 /* Contenu principal */
 main {
     section {
-        border: black 1px solid;
-        background-color: lightblue;
-        height: 100vh;
+        /* border: black 1px solid; */
+        background-color: var(--couleur-fond);
+        min-height: 100vh;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5%;
+        align-items: center;
+        /* justify-content: center; */
     }
 
+    /* Accueil */
     section.accueil {
         height: 90vh;
-        padding: 0px 5%;
-        display: flex;
-        position: relative;
         justify-content: center;
-        align-items: center;
+        position: relative;
         column-gap: 5%;
-        flex-direction: column;
+        row-gap: 5%;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/courants-d_espace-43-1024x683.png) no-repeat;
+        color: var(--couleur-font-2);
 
         @media screen and (min-width: 992px) {
             background-size: 100%;
             flex-direction: unset;
         }
 
-        color: var(--couleur-font-2);
+        /* sous-titre */
+        h2 {
+            font-variant-caps: all-small-caps;
+            font-weight: 400;
+            margin-top: 2%;
+            letter-spacing: 1px;
+        }
 
         /* Div à droite du titre */
         .divImg {
@@ -137,9 +160,71 @@ main {
             }
         }
 
-        /* sous-titre */
-        h2 {
-            font-variant-caps: all-small-caps;
+
+    }
+
+    /* Ruban des outils */
+    section.outils {
+        min-height: 20vh;
+        height: fit-content;
+        background-color: var(--couleur-fond2);
+
+        .outils__conteneur {
+            color: #666666;
+            font-weight: bold;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 5%;
+            row-gap: 5px;
+
+            .imgRuban {
+                /* height: 80%; */
+                min-width: 100px;
+                width: 10%;
+            }
         }
     }
+
+    /* Description du projet */
+    section.projet {
+        font-family: var(--font-2);
+        color: var(--couleur-font-3);
+
+        .projet__titre {
+            width: 100%;
+            margin-top: 8%;
+            text-align: center;
+
+            h3 {
+                /* margin-left: 2%; */
+                margin-top: 1%;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+
+        .projet__conteneur {
+            display: flex;
+            flex-flow: row wrap;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+
+            .projet__contenu {
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                flex-basis: 40%;
+                padding: 0px 5%;
+            }
+        }
+    }
+
+    /* Avancements */
 }
