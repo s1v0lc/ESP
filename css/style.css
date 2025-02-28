@@ -252,14 +252,18 @@ main {
             justify-content: space-around;
             align-items: flex-start;
             row-gap: 10vh;
-            margin-top: 10vh;
-            overflow: hidden;
+            /* margin-top: 10vh; */
+            margin: 10vh 0;
 
 
             .avancement__contenu {
                 display: flex;
                 flex-direction: column;
                 row-gap: 15px;
+
+                p {
+                    padding: 0 2%;
+                }
 
                 .avancement__img_petit,
                 .avancement__img_moyen,
@@ -307,14 +311,84 @@ main {
     /* Auteur */
     section.auteur {
         background-color: var(--couleur-fond2);
+
+        .auteur__titre {
+            width: 100%;
+            margin-top: 8%;
+            text-align: center;
+
+            h3 {
+                /* margin-left: 2%; */
+                margin-top: 1%;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+
+        .auteur__conteneur {
+            display: flex;
+            /* flex-grow: 1; */
+            height: 100%;
+            justify-content: space-around;
+            align-items: flex-start;
+            row-gap: 5px;
+            margin-top: 5%;
+
+            .texte {
+                display: flex;
+                flex-direction: column;
+                padding: 5%;
+                text-align: start;
+
+                h2 {
+                    margin-top: 5%;
+                }
+            }
+
+            .portrait {
+                height: 200px;
+                width: 175px;
+                padding: 10px;
+                padding-bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                background-color: var(--couleur-fond);
+                box-shadow: 5px 8.7px 40px rgba(99, 117, 138, 0.3);
+                box-shadow: 5px 8.7px 20px 10px #DEDEDE;
+    
+                img {
+                    height: 100%;
+                }
+            }
+
+            .nom {
+                /* align-items: unset; */
+                width: 100%;
+                /* margin-top: 5px; */
+                /* margin-left: 15px; */
+            }
+        }
     }
 
     /* Résultat */
     section.resultat {
+        .resultat__titre {
+            width: 100%;
+            margin-top: 8%;
+            text-align: center;
 
+            h3 {
+                /* margin-left: 2%; */
+                margin-top: 1%;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
     }
 }
 
+/* Pied de page */
 footer {
     background-color: var(--couleur-fond-menu);
     height: 20vh;
