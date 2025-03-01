@@ -192,11 +192,59 @@
                         Pour que l'expérience immersive fonctionne correctement, il a été nécessaire d'écrire quelques
                         scripts.
                     </p>
+                    <div class="avancement__img_moyen">
+                        <img src="images/unity/scripts.png" alt="">
+                    </div>
+                    <p>
+                        La partie la plus complexe du code est dédiée au bon fonctionnement du son, puisque mon projet a
+                        pour but d'apprendre à utiliser un logiciel de création audio. La programmation du son repose
+                        sur quelques scripts interconnectés qui gèrent de manière efficace le tout.
+                    </p>
+                    <!-- Gestionnaire Son -->
+                    <div class="avancement__img_moyen">
+                        <img src="images/code/parametres.png" alt="">
+                    </div>
+                    <p>
+                        À l'aide de cette seule fonction et d'une liste publique de fichiers audio, il est possible de
+                        créer du son depuis n'importe quel script. En paramétrant correctement l'appel de la fonction,
+                        il est possible de réaliser bien des choses avec.
+                    </p>
                     <div class="avancement__img_petit">
-                        <!-- <img src="images/ss/ableton.png" alt="">
-                        <img src="images/ss/vr.png" alt="">
-                        <img src="images/ss/vr2.png" alt="">
-                        <img src="images/ss/beat.png" alt=""> -->
+                        <img class="tropLarge" src="images/code/2d.png" alt="">
+                    </div>
+                    <p>
+                        Le script est placé sur un GameObject quelconque ayant une AudioSource. On peut d'abord faire
+                        jouer des sons 2D depuis cet objet.
+                    </p>
+                    <p>
+                        De plus, il est possible de jouer un son 3D à l'endroit où l'on le désire simplement en plaçant
+                        le Transform du GameObject parent en paramètre.
+                    </p>
+                    <div class="avancement__img_grand">
+                        <img src="images/code/3d.png" alt="">
+                    </div>
+                    <!-- Astuce pour l'éditeur -->
+                    <p>
+                        Avec cette astuce, j'ai modifié les noms des tableaux apparaissant dans l'éditeur en spécifiant
+                        que le script doit être lu avant même le démarrage.
+                    </p>
+                    <div class="avancement__img_moyen">
+                        <img src="images/code/typeSons.png" alt="">
+                        <img src="images/code/edit_or.png" alt="">
+                        <img src="images/unity/gSon.png" alt="">
+                    </div>
+                    <!-- Gestionnaire Beat -->
+                    <div class="avancement__img_moyen">
+                        <img src="images/code/objet.png" alt="">
+                        <img src="images/unity/gBeat.png" alt="">
+                    </div>
+                    <p>
+                        Ensuite, à l'aide des scripts placés sur les instruments, le gestionnaire Beat et le script
+                        pulsation, on choisit aléatoirement un son à jouer, paramètre le bon BPM, récupère la source
+                        audio créée dynamiquement et glisse les objets qu'on veut faire vibrer au rythme de la piste.
+                    </p>
+                    <div class="avancement__img_petit">
+                        <img class="tropLarge" src="images/code/pulsion.png" alt="">
                     </div>
                 </div>
                 <!-- Présentation -->
@@ -220,6 +268,7 @@
                 <h2>Auteur</h2>
                 <h3>artisan du chef-d'œuvre</h3>
             </div>
+            <!-- Description -->
             <div class="auteur__conteneur">
                 <div class="portrait">
                     <img src="images/moi/viceclo.png" alt="">
@@ -235,6 +284,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Retro -->
             <div class="auteur__conteneur">
                 <div class="texte">
                     <h3>Rétrospective</h3>
@@ -253,6 +303,7 @@
                     <img src="images/moi/viceclo2.png" alt="">
                 </div>
             </div>
+            <!-- Retour -->
             <div class="auteur__conteneur">
                 <div class="texte">
                     <h3>Si c'était à refaire...</h3>
@@ -279,6 +330,45 @@
             <div class="resultat__titre">
                 <h2>Résultat</h2>
                 <h3>& présentation</h3>
+            </div>
+            <div class="resultat__contenu">
+                <!-- Scene -->
+                <h3>SCÈNE</h3>
+                <p>
+                    L'immersion prend place dans le néant sur un tourne-disque géant. (toujours dans la thématique!)
+                </p>
+                <div class="resultat__img_grand">
+                    <img src="images/resultats/scene.png" alt="">
+                    <img src="images/resultats/top.png" alt="">
+                </div>
+                <!-- Stations -->
+                <h3>STATIONS</h3>
+                <p>
+                    Différentes ambiances propices à différents sons, dans lesquelles on retrouve les instruments.
+                </p>
+                <div class="resultat__img_grand">
+                    <img src="images/resultats/s1.png" alt="">
+                    <img src="images/resultats/s2.png" alt="">
+                    <img src="images/resultats/s3.png" alt="">
+                </div>
+                <!-- Instruments -->
+                <h3>INSTRUMENTS</h3>
+                <p>
+                    En interagissant avec les objets, on peut faire jouer différentes pistes audio.
+                </p>
+                <div class="resultat__img_moyen">
+                    <img src="images/resultats/mixer.png" alt="">
+                    <img src="images/resultats/grammy.png" alt="">
+                    <img src="images/resultats/tv.png" alt="">
+                </div>
+                <!-- Demo -->
+                <h3>DÉMONSTRATION</h3>
+                <div class="resultat__img_moyen">
+                    <video src="videos/DJ.mp4" controls></video>
+                    <video src="videos/grammy.mp4" controls></video>
+                    <video src="videos/tv.mp4" controls></video>
+                </div>
+
             </div>
         </section>
     </main>
